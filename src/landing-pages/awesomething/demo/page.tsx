@@ -81,7 +81,7 @@ export default function AwesomethingPage() {
           <div style={{ fontWeight: 600, marginBottom: 8 }}>Contributing</div>
           <ol style={{ margin: 0, paddingLeft: 18, opacity: 0.85, lineHeight: 1.7 }}>
             <li>
-              Create <code>src/landing-pages/&lt;your-github&gt;/index.tsx</code>
+              Create <code>src/landing-pages/&lt;your-github&gt;/&lt;your-slug&gt;/page.tsx</code>
             </li>
             <li>
               Export <code>meta</code> and a default React component
