@@ -30,7 +30,18 @@ export default function LandingPage() {
 
 3. Register it in `src/lib/landingPages.ts` (add an import + add to the `landingPages` array).
 
-4. Run locally:
+4. Create a branch, commit, and open a PR (don’t push to `main`):
+
+```bash
+git checkout -b add-landing-<your-github>
+git add src/landing-pages/<your-github> src/lib/landingPages.ts
+git commit -m "Add landing page: <your-github>"
+git push -u origin add-landing-<your-github>
+```
+
+Then open a Pull Request on GitHub and wait for review/merge.
+
+5. Run locally:
 
 ```bash
 npm install
