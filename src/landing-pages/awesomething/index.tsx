@@ -24,7 +24,7 @@ export default function AwesomethingPage() {
     >
       <div style={{ maxWidth: 980, margin: "0 auto" }}>
         <div style={{ display: "flex", justifyContent: "space-between", gap: 12 }}>
-          <div style={{ opacity: 0.8 }}>Vibe Coding Dashboard</div>
+          <div style={{ opacity: 0.8 }}>VibeShow</div>
           <a
             href="/"
             style={{ color: "#93c5fd", textDecoration: "none", opacity: 0.9 }}

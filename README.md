@@ -1,6 +1,8 @@
-# Vibe Coding Dashboard
+# VibeShow
 
 A simple open-source Next.js app that showcases developer-contributed landing pages.
+
+Production: https://vibeshow.vercel.app
 
 ## How it works
 

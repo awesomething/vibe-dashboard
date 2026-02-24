@@ -3,8 +3,8 @@ import { landingPages } from "@/lib/landingPages";
 export default function HomePage() {
   return (
     <main className="container">
-      <div className="badge">open source • Next.js • deploy on Vercel</div>
-      <h1 className="h1">Vibe Coding Dashboard</h1>
+      <div className="badge">open source • Next.js • vibeshow.vercel.app</div>
+      <h1 className="h1">VibeShow</h1>
       <p className="p">
         A gallery of developer-contributed landing pages. Each contributor adds a page under
         <span className="kbd"> src/landing-pages/&lt;github&gt;</span> and registers it in
