@@ -43,7 +43,7 @@ export default function AwesomethingPage() {
 
         <div style={{ display: "flex", gap: 12, marginTop: 18, flexWrap: "wrap" }}>
           <a
-            href="https://github.com/awesomething"
+            href="https://github.com/awesomething/vibe-dashboard/"
             style={{
               padding: "10px 14px",
               borderRadius: 12,
