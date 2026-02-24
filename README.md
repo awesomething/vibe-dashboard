@@ -52,7 +52,7 @@ Open `http://localhost:3000` and your page at `/p/<your-github>/<your-slug>`. (Y
 
 ## How it works
 
-- Each contributor adds a page under `src/landing-pages/<github>/index.tsx`.
+- Each contributor adds a page under `src/landing-pages/<github>/<slug>/page.tsx`.
 - They export:
   - `meta` (title/author/tags/description)
   - a default React component (the landing page)
@@ -60,7 +60,7 @@ Open `http://localhost:3000` and your page at `/p/<your-github>/<your-slug>`. (Y
 
 Routes:
 - `/` — gallery
-- `/p/<slug>` — individual landing page
+- `/p/<github>/<slug>` — individual landing page
 - `/CONTRIBUTING` — contribution guide
 
 ## Local dev
