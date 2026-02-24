@@ -70,16 +70,8 @@ npm install
 npm run dev
 ```
 
-## Deploy to Vercel
-
-1. Push this repo to GitHub.
-2. Import to Vercel.
-3. Deploy.
-
 ### Vercel token
 
 Do **not** commit tokens. Use `VERCEL_TOKEN` as an environment variable only.
 
-## License
 
-MIT (add a LICENSE file if you want).
