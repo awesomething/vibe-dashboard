@@ -1,5 +1,7 @@
 import type { ComponentType } from "react";
-import AwesomethingPage, { meta as awesomethingMeta } from "@/landing-pages/awesomething";
+import AwesomethingDemoPage, {
+  meta as awesomethingDemoMeta,
+} from "@/landing-pages/awesomething/demo/page";
 
 export type LandingPageMeta = {
   slug: string;
@@ -19,8 +21,8 @@ export type LandingPageDef = {
 
 export const landingPages: LandingPageDef[] = [
   {
-    meta: awesomethingMeta,
-    Component: AwesomethingPage,
+    meta: awesomethingDemoMeta,
+    Component: AwesomethingDemoPage,
   },
 ];
 

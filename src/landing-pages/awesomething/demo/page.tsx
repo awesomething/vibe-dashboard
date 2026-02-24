@@ -1,5 +1,5 @@
 export const meta = {
-  slug: "awesomething",
+  slug: "demo",
   title: "Awesomething — Demo Landing",
   author: {
     name: "Awesome Something",
@@ -56,7 +56,7 @@ export default function AwesomethingPage() {
             GitHub
           </a>
           <a
-            href="/p/awesomething"
+            href="/p/awesomething/demo"
             style={{
               padding: "10px 14px",
               borderRadius: 12,

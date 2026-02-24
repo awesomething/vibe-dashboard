@@ -9,14 +9,14 @@ Production: https://vibeshow.vercel.app
 1. Create a folder:
 
 ```bash
-mkdir -p src/landing-pages/<your-github>
+mkdir -p src/landing-pages/<your-github>/<your-slug>
 ```
 
-2. Add your page at `src/landing-pages/<your-github>/index.tsx`:
+2. Add your page at `src/landing-pages/<your-github>/<your-slug>/page.tsx`:
 
 ```tsx
 export const meta = {
-  slug: "<your-github>",
+  slug: "<your-slug>",
   title: "Your page title",
   author: { name: "Your Name", github: "<your-github>" },
   tags: ["tag1", "tag2"],
@@ -34,7 +34,7 @@ export default function LandingPage() {
 
 ```bash
 git checkout -b add-landing-<your-github>
-git add src/landing-pages/<your-github> src/lib/landingPages.ts
+git add src/landing-pages/<your-github>/<your-slug> src/lib/landingPages.ts
 git commit -m "Add landing page: <your-github>"
 git push -u origin add-landing-<your-github>
 ```
@@ -48,7 +48,7 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:3000` and your page at `/p/<your-github>`.
+Open `http://localhost:3000` and your page at `/p/<your-github>/<your-slug>`. (You can add a new landing page anytime by choosing a new slug.)
 
 ## How it works
 

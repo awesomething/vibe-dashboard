@@ -4,17 +4,17 @@ export default function ContributingPage() {
       <h1>Contributing</h1>
       <p>
         Add a new landing page by creating a folder under <code>src/landing-pages</code> and
-        registering it.
+        registering it. You can add multiple pages over time by using different slugs.
       </p>
       <h2>Steps</h2>
       <ol>
         <li>
-          Create <code>src/landing-pages/&lt;github-username&gt;/index.tsx</code>
+          Create <code>src/landing-pages/&lt;github-username&gt;/&lt;slug&gt;/page.tsx</code>
         </li>
         <li>
           Export <code>meta</code>:
           <pre>{`export const meta = {
-  slug: "your-github",
+  slug: "my-landing-v2",
   title: "Your page title",
   author: { name: "Your Name", github: "your-github" },
   tags: ["tag1", "tag2"],
