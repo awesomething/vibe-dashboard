@@ -1,4 +1,4 @@
-import { landingPages } from "@/lib/landingPages";
+import { landingPages } from "src/lib/landingPages";
 
 export default function HomePage() {
   return (
