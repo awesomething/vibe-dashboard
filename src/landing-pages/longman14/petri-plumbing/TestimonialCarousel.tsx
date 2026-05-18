@@ -30,6 +30,17 @@ export default function TestimonialCarousel({
 
   return (
     <div>
+      <style>{`
+        @media (max-width: 768px) {
+          .testimonial-selector-list {
+            display: grid !important;
+            grid-template-columns: 1fr !important;
+          }
+          .testimonial-selector-card {
+            width: 100%;
+          }
+        }
+      `}</style>
       <div
         style={{
           background: theme.sky,
@@ -111,10 +122,14 @@ export default function TestimonialCarousel({
         </div>
       </div>
 
-      <div style={{ display: "flex", gap: 14, marginTop: 16 }}>
+      <div
+        className="testimonial-selector-list"
+        style={{ display: "flex", gap: 14, marginTop: 16 }}
+      >
         {testimonials.map((testimonial, i) => (
           <button
             key={i}
+            className="testimonial-selector-card"
             onClick={() => setActiveTestimonial(i)}
             style={{
               flex: 1,

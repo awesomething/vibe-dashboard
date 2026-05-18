@@ -285,6 +285,18 @@ export default function LandingPage() {
         .process-grid { grid-template-columns: 1fr !important; }
         .footer-grid { grid-template-columns: 1fr !important; }
         .hide-mobile { display: none !important; }
+        .why-petri-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+        .why-petri-year { font-size: 120px !important; top: -18px !important; left: 0 !important; }
+        .why-petri-feature { padding: 28px 24px !important; }
+        .why-petri-cards {
+          display: grid !important;
+          grid-template-columns: 1fr !important;
+          gap: 14px !important;
+        }
+        .why-petri-card {
+          width: 100%;
+        }
+        .testimonials-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
       }
       @media (max-width: 480px) {
         .services-grid { grid-template-columns: 1fr !important; }
@@ -513,17 +525,17 @@ export default function LandingPage() {
     {/* WHY PETRI — Visual feature section */}
     <section id="why-petri" style={{ background: theme.offWhite, padding: "100px 0" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center" }}>
+        <div className="why-petri-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center" }}>
           
           {/* Left — Visual */}
           <div style={{ position: "relative" }}>
             {/* Big background number */}
-            <div className="display" style={{ position: "absolute", top: -30, left: -10, fontSize: 200, fontWeight: 900, color: `${theme.navy}08`, lineHeight: 1, userSelect: "none", zIndex: 0 }}>
+            <div className="display why-petri-year" style={{ position: "absolute", top: -30, left: -10, fontSize: 200, fontWeight: 900, color: `${theme.navy}08`, lineHeight: 1, userSelect: "none", zIndex: 0 }}>
               1906
             </div>
             
             <div style={{ position: "relative", zIndex: 1 }}>
-              <div style={{ background: theme.navy, borderRadius: 16, padding: "36px 32px", marginBottom: 16, boxShadow: "0 20px 50px rgba(11,37,69,0.15)" }}>
+              <div className="why-petri-feature" style={{ background: theme.navy, borderRadius: 16, padding: "36px 32px", marginBottom: 16, boxShadow: "0 20px 50px rgba(11,37,69,0.15)" }}>
                 <div style={{ display: "flex", gap: 20, alignItems: "flex-start" }}>
                   <div style={{ width: 56, height: 56, background: theme.gold, borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center", fontSize: 28, flexShrink: 0 }}>🏠</div>
                   <div>
@@ -535,14 +547,14 @@ export default function LandingPage() {
                 </div>
               </div>
 
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
+              <div className="why-petri-cards" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
                 {[
                   { icon: "⚡", title: "Fast Response", body: "Most calls answered within the hour" },
                   { icon: "🛡️", title: "Guaranteed Work", body: "Every job backed by our service guarantee" },
                   { icon: "💰", title: "Fair Pricing", body: "Upfront quotes — no hidden fees, ever" },
                   { icon: "🎓", title: "Expert Techs", body: "Licensed, trained, and background-checked" },
                 ].map((item) => (
-                  <div key={item.title} style={{ background: "white", border: `1px solid ${theme.border}`, borderRadius: 10, padding: 18 }}>
+                  <div className="why-petri-card" key={item.title} style={{ background: "white", border: `1px solid ${theme.border}`, borderRadius: 10, padding: 18 }}>
                     <div style={{ fontSize: 24, marginBottom: 8 }}>{item.icon}</div>
                     <div style={{ fontFamily: "'Source Sans 3', sans-serif", fontWeight: 700, fontSize: 14, color: theme.navy, marginBottom: 4 }}>{item.title}</div>
                     <div style={{ color: theme.slateLight, fontSize: 13, fontFamily: "'Source Sans 3', sans-serif", lineHeight: 1.5 }}>{item.body}</div>
@@ -628,7 +640,7 @@ export default function LandingPage() {
     {/* TESTIMONIALS */}
     <section style={{ background: theme.white, padding: "100px 0" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 24px" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "0.8fr 1.2fr", gap: 80, alignItems: "center" }}>
+        <div className="testimonials-grid" style={{ display: "grid", gridTemplateColumns: "0.8fr 1.2fr", gap: 80, alignItems: "center" }}>
           <div>
             <div style={{ color: theme.blue, fontFamily: "'Source Sans 3', sans-serif", fontWeight: 700, fontSize: 12, letterSpacing: 2.5, textTransform: "uppercase", marginBottom: 14 }}>Customer Reviews</div>
             <h2 className="display" style={{ fontSize: "clamp(30px, 3vw, 44px)", fontWeight: 800, color: theme.navy, lineHeight: 1.1, marginBottom: 20 }}>
@@ -709,7 +721,7 @@ export default function LandingPage() {
         </div>
         <div style={{ borderTop: "1px solid rgba(255,255,255,0.08)", paddingTop: 20, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12 }}>
           <div style={{ color: "rgba(255,255,255,0.35)", fontFamily: "'Source Sans 3', sans-serif", fontSize: 13 }}>
-            © 2024 Petri Plumbing, Heating, Cooling & Drain Cleaning. All rights reserved.
+            © {new Date().getFullYear()} Petri Plumbing, Heating, Cooling & Drain Cleaning. All rights reserved.
           </div>
           <div style={{ color: "rgba(255,255,255,0.35)", fontFamily: "'Source Sans 3', sans-serif", fontSize: 13 }}>
             Licensed & Insured · Serving All 5 Boroughs
