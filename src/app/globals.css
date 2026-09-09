@@ -11,6 +11,7 @@ a:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: 18px; }
 .brand-mark { display: grid; place-items: center; width: 29px; height: 29px; background: var(--ink); color: var(--acid); font-size: 15px; transform: rotate(-8deg); }
 .nav-links { display: flex; gap: 30px; color: var(--muted); font-size: 13px; font-weight: 600; }
+.nav-action { display: inline-flex; align-items: center; gap: 4px; }
 .nav-links a:hover { color: var(--ink); }
 .hero { min-height: 545px; display: flex; align-items: center; justify-content: space-between; gap: 50px; padding: 92px 2.5vw 104px; background: radial-gradient(circle at 83% 35%, rgba(216,242,106,.55), transparent 24%), radial-gradient(circle at 75% 70%, rgba(139,184,238,.35), transparent 26%); }
 .hero-copy { max-width: 735px; animation: rise .7s ease both; }

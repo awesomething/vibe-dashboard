@@ -1,4 +1,5 @@
 import { landingPages } from "@/lib/landingPages";
+import { ArrowUpRightIcon } from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -9,8 +10,9 @@ export default function HomePage() {
           <span>VibeShow</span>
         </a>
         <nav className="nav-links" aria-label="Main navigation">
-          <a href="#showcase">Showcase</a>
-          <a href="/CONTRIBUTING">Contribute <span aria-hidden="true">↗</span></a>
+          <a href="#showcase" >Showcase</a>
+          <a href="/CONTRIBUTING" className="nav-action">Contribute <ArrowUpRightIcon size={15} aria-hidden="true" />
+          </a>
         </nav>
       </header>
 
