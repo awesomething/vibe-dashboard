@@ -1,10 +1,7 @@
 import type { ComponentType } from "react";
-import AwesomethingDemoPage, {
-  meta as awesomethingDemoMeta,
-} from "@/landing-pages/awesomething/demo/page";
-import NonstopPlumbersPage, {
-  meta as nonstopPlumbersMeta,
-} from "@/landing-pages/awesomething/nonstop-plumbers-water-heater-installation/page";
+import AwesomethingDemoPage, { meta as awesomethingDemoMeta } from "../landing-pages/awesomething/demo/page";
+import NonstopPlumbersPage, { meta as nonstopPlumbersMeta } from "../landing-pages/awesomething/nonstop-plumbers-water-heater-installation/page";
+import LandingPage, {meta as petriPlumbingMeta} from "src/landing-pages/longman14/petri-plumbing/page";
 
 export type LandingPageMeta = {
   slug: string;
@@ -31,6 +28,10 @@ export const landingPages: LandingPageDef[] = [
     meta: nonstopPlumbersMeta,
     Component: NonstopPlumbersPage,
   },
+  {
+    meta: petriPlumbingMeta,
+    Component: LandingPage
+  }
 ];
 
 export function getLandingPage(slug: string): LandingPageDef | undefined {
