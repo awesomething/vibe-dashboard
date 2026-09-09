@@ -1,5 +1,6 @@
-import { landingPages } from "@/lib/landingPages";
-import { ArrowUpRightIcon } from "lucide-react";
+
+import { ArrowRight, ArrowUpRight, ArrowUpRightIcon } from "lucide-react";
+import { landingPages } from "src/lib/landingPages";
 
 export default function HomePage() {
   return (
@@ -18,8 +19,8 @@ export default function HomePage() {
 
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero-copy">
-          <div className="eyebrow"><span className="eyebrow-dot" /> Independent web makers</div>
-          <h1 id="hero-title">Good websites<br /><em>deserve to be seen.</em></h1>
+          <div className="eyebrow"><span className="eyebrow-dot" /> Videobook-powered platform for showcasing tech talents </div>
+          <h1 id="hero-title">Your websites<br /><em>deserve to be seen.</em></h1>
           <p className="hero-text">
             A living showcase of sharp landing pages made by developers. Browse the work,
             find your next collaborator, and get inspired to ship something with a point of view.
@@ -73,8 +74,8 @@ export default function HomePage() {
                   <h3>{meta.title}</h3>
                   <p>{meta.description ?? "View the landing page."}</p>
                   <div className="tag-row">
-                    {meta.tags?.slice(0, 3).map((tag) => <span key={tag}>{tag}</span>)}
-                    <span className="view-link">View project <span aria-hidden="true">→</span></span>
+                    {meta.tags?.map((tag) => <span key={tag}>{tag}</span>)}
+                    <span className="view-link">View project <ArrowRight size={10} className="ml-2" /></span>
                   </div>
                 </div>
               </a>
@@ -88,7 +89,7 @@ export default function HomePage() {
           <div className="eyebrow">Your work belongs here</div>
           <h2>Make something worth<br /><em>scrolling into.</em></h2>
         </div>
-        <a className="button button-light" href="/CONTRIBUTING">Add your page <span aria-hidden="true">↗</span></a>
+        <a className="button button-light nav-action py-6!" href="/CONTRIBUTING">Add your page <ArrowUpRight size={16} /></a>
       </section>
 
       <footer className="site-footer">
