@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap");
+@import "tailwindcss";
 
 :root { --ink: #202322; --muted: #6f746e; --paper: #f4f1e9; --line: #d8d5cb; --acid: #d8f26a; --coral: #f47d65; --blue: #8bb8ee; }
 * { box-sizing: border-box; }
@@ -59,6 +60,8 @@ em { color: var(--coral); font-style: normal; }
 .contribute-banner h2 { margin: 14px 0 0; font-size: clamp(2.2rem, 5vw, 4.5rem); line-height: .92; letter-spacing: -.055em; }
 .contribute-banner h2 em { color: var(--paper); }
 .site-footer { display: flex; justify-content: space-between; gap: 20px; padding: 28px 2.5vw; color: var(--muted); font-size: 11px; }
+.contribution-shell .site-header { margin-bottom: 72px; }
+.contribution-shell > section { margin-bottom: 104px; }
 @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
 @media (min-width: 701px) and (max-width: 1050px) {
   .tag-row .view-link { flex-basis: 100%; width: max-content; margin-left: 0; }
@@ -69,4 +72,5 @@ em { color: var(--coral); font-style: normal; }
   .showcase-section { padding: 72px 0 86px; }.section-heading { display: block; }.section-heading p { margin-top: 16px; text-align: left; }.showcase-grid { grid-template-columns: 1fr; gap: 64px; }
   .preview-window { box-shadow: 7px 7px 0 var(--acid); }.showcase-card-1 .preview-window { box-shadow: 7px 7px 0 var(--blue); }.card-body p { min-height: 0; }.view-link { width: 100%; margin: 8px 0 0; }
   .contribute-banner { display: block; padding: 55px 8%; }.contribute-banner .button { margin-top: 30px; }.site-footer { display: block; line-height: 2; padding: 24px 0; }
+  .contribution-shell .site-header { margin-bottom: 48px; }.contribution-shell > section { margin-bottom: 72px; }
 }

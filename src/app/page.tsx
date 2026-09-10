@@ -19,7 +19,7 @@ export default function HomePage() {
 
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero-copy">
-          <div className="eyebrow"><span className="eyebrow-dot" /> Videobook-powered platform for showcasing tech talents </div>
+          <div className="eyebrow"><span className="eyebrow-dot" /> ClassVisa-powered platform for showcasing tech talents </div>
           <h1 id="hero-title">Your websites<br /><em>deserve to be seen.</em></h1>
           <p className="hero-text">
             A living showcase of sharp landing pages made by developers. Browse the work,

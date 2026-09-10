@@ -2,6 +2,7 @@ import type { ComponentType } from "react";
 import AwesomethingDemoPage, { meta as awesomethingDemoMeta } from "../landing-pages/awesomething/demo/page";
 import NonstopPlumbersPage, { meta as nonstopPlumbersMeta } from "../landing-pages/awesomething/nonstop-plumbers-water-heater-installation/page";
 import LandingPage, {meta as petriPlumbingMeta} from "src/landing-pages/longman14/petri-plumbing/page";
+import CommonerplacePage, {meta as commonerPlaceMeta} from "src/landing-pages/longman14/commonerplace/page";
 
 export type LandingPageMeta = {
   slug: string;
@@ -31,6 +32,10 @@ export const landingPages: LandingPageDef[] = [
   {
     meta: petriPlumbingMeta,
     Component: LandingPage
+  },
+  {
+    meta: commonerPlaceMeta,
+    Component: CommonerplacePage
   }
 ];
 
