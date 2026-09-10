@@ -1,5 +1,6 @@
-import { landingPages } from "@/lib/landingPages";
+
 import { notFound } from "next/navigation";
+import { landingPages } from "src/lib/landingPages";
 
 export default async function LandingPage({
   params,

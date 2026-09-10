@@ -1,0 +1,443 @@
+.page {
+  --white: #ffffff;
+  --walnut: #2b1d14;
+  --brass: #a9834f;
+  --walnut-muted: rgba(43, 29, 20, 0.68);
+  --walnut-line: rgba(43, 29, 20, 0.16);
+  min-height: 100vh;
+  overflow: hidden;
+  background: var(--white);
+  color: var(--walnut);
+  font-family: var(--font-body), sans-serif;
+}
+
+.page :global(*) {
+  box-sizing: border-box;
+}
+
+.page :global(a) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page :global(button) {
+  border: 1px solid var(--brass);
+  background: var(--brass);
+  color: var(--white);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  padding: 0.85rem 1.25rem;
+  transition: background 180ms ease, border-color 180ms ease, color 180ms ease,
+    transform 180ms ease;
+}
+
+.page :global(button:hover) {
+  background: var(--walnut);
+  border-color: var(--walnut);
+  transform: translateY(-2px);
+}
+
+.page :global(button:focus-visible),
+.page :global(a:focus-visible) {
+  outline: 3px solid var(--brass);
+  outline-offset: 4px;
+}
+
+.page :global(h1),
+.page :global(h2),
+.page :global(h3) {
+  font-family: var(--font-display), Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.page :global(p) {
+  line-height: 1.65;
+}
+
+.page :global(header) {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.94);
+  border-bottom: 1px solid var(--walnut-line);
+  display: flex;
+  height: 76px;
+  justify-content: space-between;
+  left: 0;
+  padding: 0 max(1.25rem, calc((100vw - 72rem) / 2));
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.page :global(header) > :global(div) {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.page :global(header) > :global(div) > :global(a) {
+  font-family: var(--font-display), Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+}
+
+.page :global(header nav) {
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+}
+
+.page :global(header nav a) {
+  color: var(--walnut-muted);
+  font-size: 0.9rem;
+  transition: color 180ms ease;
+}
+
+.page :global(header nav a:hover) {
+  color: var(--walnut);
+}
+
+.page :global(header) > :global(div) > :global(button) {
+  display: block;
+}
+
+.page :global(header) > :global(div) > :global(button:last-child) {
+  display: none;
+}
+
+.page :global(#top),
+.page :global(#visit) {
+  background: var(--walnut);
+  color: var(--white);
+  position: relative;
+}
+
+.page :global(#top) {
+  padding-top: 76px;
+}
+
+.page :global(#top) > :global(div:first-child),
+.page :global(#visit) > :global(div) {
+  margin: 0 auto;
+  max-width: 72rem;
+  padding: 7rem max(1.25rem, 4vw);
+}
+
+.page :global(#top) > :global(div:first-child) {
+  align-items: center;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: minmax(0, 1.1fr) minmax(16rem, 0.9fr);
+}
+
+.page :global(#top) > :global(div:first-child) > :global(div:first-child) {
+  max-width: 38rem;
+}
+
+.page :global(#top) p:first-child,
+.page :global(#visit) h3 {
+  color: var(--brass);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.page :global(#top) h1 {
+  font-size: clamp(2.7rem, 6vw, 5rem);
+  line-height: 1.02;
+  margin: 1.4rem 0 1.5rem;
+}
+
+.page :global(#top) p:not(:first-child),
+.page :global(#visit) p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.page :global(#top) > :global(div:first-child) > :global(div:first-child) > :global(div),
+.page :global(#visit) > :global(div) > :global(div:first-child) > :global(div) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.page :global(#top) > :global(div:first-child) > :global(div:first-child) > :global(div) button:nth-child(2),
+.page :global(#visit) > :global(div) > :global(div:first-child) > :global(div) button:nth-child(2) {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.page :global(#top) > :global(div:first-child) > :global(div:first-child) > :global(div) button:nth-child(2):hover,
+.page :global(#visit) > :global(div) > :global(div:first-child) > :global(div) button:nth-child(2):hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--white);
+}
+
+.page :global(#top) > :global(div:first-child) > :global(div:last-child) {
+  color: var(--brass);
+}
+
+.page :global(.commonerplace-hero-image) {
+  aspect-ratio: 4 / 5;
+  border: 1px solid var(--brass);
+  box-shadow: 1rem 1rem 0 rgba(169, 131, 79, 0.3);
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.page :global(#top) > :global(div:last-child) {
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 1.25rem max(1.25rem, 4vw);
+}
+
+.page :global(#top) > :global(div:last-child) > :global(div) {
+  color: rgba(255, 255, 255, 0.58);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 2.5rem;
+  margin: 0 auto;
+  max-width: 72rem;
+}
+
+.page > :global(section):not(:global(#top)):not(:global(#visit)) {
+  padding: 6rem max(1.25rem, 4vw);
+}
+
+.page > :global(section):not(:global(#top)):not(:global(#visit)) > :global(div) {
+  margin: 0 auto;
+  max-width: 72rem;
+}
+
+.page > :global(section):nth-of-type(odd):not(:global(#top)):not(:global(#visit)) {
+  background: #fbfaf8;
+}
+
+.page :global(section) h2 {
+  color: var(--walnut);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.08;
+}
+
+.page :global(section) p {
+  color: var(--walnut-muted);
+  max-width: 38rem;
+}
+
+.page :global(#story) ol {
+  border-top: 1px solid var(--walnut-line);
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  margin: 3.5rem 0 0;
+  padding: 2.5rem 0 0;
+}
+
+.page :global(#story) li > :global(div) {
+  border-bottom: 1px solid var(--walnut-line);
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.page :global(#story) li span:first-child {
+  color: var(--brass);
+  font-family: var(--font-display), Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
+}
+
+.page :global(#story) li span:last-child {
+  color: var(--walnut-muted);
+  font-size: 0.75rem;
+}
+
+.page :global(#story) li h3 {
+  font-size: 1.6rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.page :global(#stylists) > :global(div) > :global(div:last-child) {
+  border: 1px solid var(--walnut-line);
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 3.5rem;
+  overflow: hidden;
+}
+
+.page :global(#stylists) > :global(div) > :global(div:last-child) > :global(div) {
+  background: var(--white);
+  padding: 1.5rem;
+}
+
+.page :global(#stylists) > :global(div) > :global(div:last-child) > :global(div) > :global(div:first-child) {
+  background: linear-gradient(135deg, rgba(169, 131, 79, 0.2), rgba(169, 131, 79, 0.04));
+  border: 1px solid var(--walnut-line);
+  height: 8rem;
+}
+
+.page :global(#stylists) h3 {
+  font-size: 1.25rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.page :global(#space) > :global(div) > :global(div:last-child) {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 3rem;
+}
+
+.page :global(#space) figure {
+  margin: 0;
+}
+
+.page :global(#space) figure > :global(div) {
+  background: linear-gradient(160deg, rgba(43, 29, 20, 0.92), rgba(169, 131, 79, 0.58));
+  border: 1px solid var(--walnut-line);
+  min-height: 12rem;
+}
+
+.page :global(#space) figcaption {
+  color: var(--walnut-muted);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin-top: 0.75rem;
+}
+
+.page :global(#services) > :global(div) {
+  max-width: 48rem;
+}
+
+.page :global(#services) [data-state] {
+  border-bottom: 1px solid var(--walnut-line);
+}
+
+.page :global(#services) [data-state] > :global(h3) button {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  color: var(--walnut);
+  display: flex;
+  font-family: var(--font-display), Georgia, "Times New Roman", serif;
+  font-size: 1.25rem;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+  text-align: left;
+  width: 100%;
+}
+
+.page :global(#services) [data-state] > :global(h3) button:hover {
+  background: transparent;
+  color: var(--brass);
+  transform: none;
+}
+
+.page :global(#services) [data-state] > :global(div) {
+  color: var(--walnut-muted);
+  padding: 0 2rem 1.25rem 0;
+}
+
+.page :global(#visit) > :global(div) {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.page :global(#visit) > :global(div) > :global(div:last-child) {
+  border-left: 1px solid rgba(255, 255, 255, 0.16);
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 3rem;
+}
+
+.page :global(#visit) > :global(div) > :global(div:last-child) p {
+  color: rgba(255, 255, 255, 0.66);
+}
+
+.page :global(footer) {
+  background: var(--walnut);
+  color: rgba(255, 255, 255, 0.58);
+  display: flex;
+  font-size: 0.75rem;
+  justify-content: space-between;
+  padding: 2rem max(1.25rem, 4vw);
+}
+
+.page :global(footer) > :global(div) {
+  display: flex;
+  gap: 1.5rem;
+  margin: 0 auto;
+  max-width: 72rem;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .page :global(header) > :global(div) > :global(button) {
+    display: none;
+  }
+
+  .page :global(header) > :global(div) > :global(button:last-child) {
+    align-items: center;
+    background: transparent;
+    border: 0;
+    color: var(--walnut);
+    display: flex;
+    padding: 0.5rem;
+  }
+
+  .page :global(header) nav {
+    display: none;
+  }
+
+  .page :global(#top) > :global(div:first-child),
+  .page :global(#visit) > :global(div) {
+    grid-template-columns: 1fr;
+  }
+
+  .page :global(#top) > :global(div:first-child) > :global(div:last-child) {
+    display: none;
+  }
+
+  .page :global(#story) ol,
+  .page :global(#stylists) > :global(div) > :global(div:last-child),
+  .page :global(#space) > :global(div) > :global(div:last-child) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .page :global(#visit) > :global(div) > :global(div:last-child) {
+    border-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+    padding-left: 0;
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .page :global(#top) > :global(div:first-child),
+  .page :global(#visit) > :global(div),
+  .page > :global(section):not(:global(#top)):not(:global(#visit)) {
+    padding-bottom: 4.5rem;
+    padding-top: 4.5rem;
+  }
+
+  .page :global(#top) h1 {
+    font-size: 2.8rem;
+  }
+
+  .page :global(#story) ol,
+  .page :global(#stylists) > :global(div) > :global(div:last-child),
+  .page :global(#space) > :global(div) > :global(div:last-child),
+  .page :global(#visit) > :global(div) > :global(div:last-child) {
+    grid-template-columns: 1fr;
+  }
+
+  .page :global(footer) > :global(div) {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
