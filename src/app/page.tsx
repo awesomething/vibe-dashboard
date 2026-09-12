@@ -3,6 +3,7 @@ import { ArrowRight, ArrowUpRight, ArrowUpRightIcon } from "lucide-react";
 import { landingPages } from "src/lib/landingPages";
 
 export default function HomePage() {
+
   return (
     <main className="site-shell">
       <header className="site-header">
@@ -45,7 +46,10 @@ export default function HomePage() {
         </div>
 
         <div className="showcase-grid">
+
+          
           {landingPages.map(({ meta }, index) => {
+           
             const pageUrl = `/p/${meta.author.github}/${meta.slug}`;
 
             return (
