@@ -4,7 +4,7 @@ A simple open-source Next.js app that showcases developer-contributed landing pa
 
 Production: https://vibeshow.vercel.app
 
-## How to add your landing page (2 minutes)
+## How to add your landing page (5 minutes)
 
 1. Create a folder:
 
