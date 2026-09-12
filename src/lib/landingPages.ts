@@ -6,6 +6,12 @@ import CommonerplacePage, {meta as commonerPlaceMeta} from "src/landing-pages/lo
 // @ts-ignore The imported landing page is a JSX module without a declaration file.
 import FrazierPlumbingPage, {meta as frazierMeta} from "src/landing-pages/longman14/frazier-plumbing/page";
 
+// @ts-ignore
+import FadeFactoryPage, {meta as fadeFactoryMeta} from "src/landing-pages/longman14/fade-factory/page";
+// @ts-ignore
+import ModernSalonPage from "src/landing-pages/longman14/modern-salon/page";
+import { meta as modernSalonMeta } from "src/landing-pages/longman14/modern-salon/meta";
+
 export type LandingPageMeta = {
   slug: string;
   title: string;
@@ -42,6 +48,14 @@ export const landingPages: LandingPageDef[] = [
   {
     meta: frazierMeta,
     Component: FrazierPlumbingPage
+  },
+  {
+    meta: fadeFactoryMeta,
+    Component: FadeFactoryPage
+  },
+  {
+    meta: modernSalonMeta,
+    Component: ModernSalonPage
   }
 
 ];

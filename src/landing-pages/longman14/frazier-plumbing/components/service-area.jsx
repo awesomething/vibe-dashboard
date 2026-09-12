@@ -1,6 +1,8 @@
-import { MapPin } from "lucide-react";
+import { ExternalLink, MapPin } from "lucide-react";
 import { areas } from "../../lib/utils";
 import { COLORS } from "../../lib/utils";
+
+const GOOGLE_MAPS_URL = "https://maps.google.com/?cid=10317840283646066300&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA";
 
 export function ServiceAreas() {
     return (
@@ -27,6 +29,16 @@ export function ServiceAreas() {
               </div>
             ))}
           </div>
+          <a
+            href={GOOGLE_MAPS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 mt-8"
+            style={{ fontFamily: "'Inter', sans-serif", color: COLORS.blue, fontSize: "0.9rem", fontWeight: 700 }}
+          >
+            View us on Google Maps
+            <ExternalLink size={15} aria-hidden="true" />
+          </a>
         </div>
       </section>
     );
