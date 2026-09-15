@@ -10,7 +10,12 @@ import FrazierPlumbingPage, {meta as frazierMeta} from "src/landing-pages/longma
 import FadeFactoryPage, {meta as fadeFactoryMeta} from "src/landing-pages/longman14/fade-factory/page";
 // @ts-ignore
 import ModernSalonPage from "src/landing-pages/longman14/modern-salon/page";
+
 import { meta as modernSalonMeta } from "src/landing-pages/longman14/modern-salon/meta";
+
+// @ts-ignore
+import ProExpressLandingPage from "src/landing-pages/longman14/proxpress/page";
+import {meta as proXpressMeta} from "src/landing-pages/longman14/proxpress/meta"
 
 export type LandingPageMeta = {
   slug: string;
@@ -56,6 +61,10 @@ export const landingPages: LandingPageDef[] = [
   {
     meta: modernSalonMeta,
     Component: ModernSalonPage
+  },
+  {
+    meta: proXpressMeta,
+    Component: ProExpressLandingPage
   }
 
 ];
