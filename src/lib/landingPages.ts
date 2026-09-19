@@ -17,6 +17,8 @@ import { meta as modernSalonMeta } from "src/landing-pages/longman14/modern-salo
 import ProExpressLandingPage from "src/landing-pages/longman14/proxpress/page";
 // @ts-ignore
 import HomeForgeRoofingLanding from "src/landing-pages/longman14/home-forger/page";
+import AllAboutPlumbing, {meta as allAboutPlumbingMeta} from "src/landing-pages/longman14/all-about-plumbing/page";
+
 
 import {meta as proXpressMeta} from "src/landing-pages/longman14/proxpress/meta"
 import {meta as homeForgerMeta} from "src/landing-pages/longman14/home-forger/meta"
@@ -74,6 +76,10 @@ export const landingPages: LandingPageDef[] = [
   {
     meta: homeForgerMeta,
     Component: HomeForgeRoofingLanding
+  },
+  {
+    meta: allAboutPlumbingMeta,
+    Component: AllAboutPlumbing
   }
 
 ];
