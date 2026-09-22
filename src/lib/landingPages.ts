@@ -10,7 +10,19 @@ import FrazierPlumbingPage, {meta as frazierMeta} from "src/landing-pages/longma
 import FadeFactoryPage, {meta as fadeFactoryMeta} from "src/landing-pages/longman14/fade-factory/page";
 // @ts-ignore
 import ModernSalonPage from "src/landing-pages/longman14/modern-salon/page";
+
 import { meta as modernSalonMeta } from "src/landing-pages/longman14/modern-salon/meta";
+
+// @ts-ignore
+import ProExpressLandingPage from "src/landing-pages/longman14/proxpress/page";
+// @ts-ignore
+import HomeForgeRoofingLanding from "src/landing-pages/longman14/home-forger/page";
+import AllAboutPlumbing, {meta as allAboutPlumbingMeta} from "src/landing-pages/longman14/all-about-plumbing/page";
+
+
+import {meta as proXpressMeta} from "src/landing-pages/longman14/proxpress/meta"
+import {meta as homeForgerMeta} from "src/landing-pages/longman14/home-forger/meta"
+
 
 export type LandingPageMeta = {
   slug: string;
@@ -56,6 +68,18 @@ export const landingPages: LandingPageDef[] = [
   {
     meta: modernSalonMeta,
     Component: ModernSalonPage
+  },
+  {
+    meta: proXpressMeta,
+    Component: ProExpressLandingPage
+  },
+  {
+    meta: homeForgerMeta,
+    Component: HomeForgeRoofingLanding
+  },
+  {
+    meta: allAboutPlumbingMeta,
+    Component: AllAboutPlumbing
   }
 
 ];
