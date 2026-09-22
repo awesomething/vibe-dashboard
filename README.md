@@ -1,8 +1,8 @@
 # VibeShow
 
-A simple open-source Next.js app that showcases developer-contributed landing pages.
+A simple open-source Next.js app that showcases developer-contributed landing pages for potential business owners.
 
-Production: https://vibeshow.vercel.app
+Production: https://vibeshow.vercel.app/
 
 ## How to add your landing page (5 minutes)
 
