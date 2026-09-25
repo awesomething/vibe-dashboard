@@ -134,8 +134,10 @@ export default function FruitOfLabourPage() {
             <h1>
               Fruits of
               <br />
-              <span>Labor.</span>
+              <span>Labor Plumbing</span>
+             
             </h1>
+            <p className="text-lg md:text-2xl">& Home Improvements LLC</p>
             <p className={styles.heroIntro}>
               Good work. Straight answers. A home that works the way it should.
             </p>
