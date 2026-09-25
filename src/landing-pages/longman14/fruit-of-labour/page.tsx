@@ -170,10 +170,6 @@ export default function FruitOfLabourPage() {
         </div>
       </section>
 
-      <section className={styles.formSection} aria-label="Request plumbing service">
-        <ContactForm styles={styles} />
-      </section>
-
       <section
         className={styles.promiseBand}
         aria-label="Our service commitments"
@@ -205,6 +201,7 @@ export default function FruitOfLabourPage() {
         ))}
       </section>
 
+      
       <section
         className={styles.servicesSection}
         id="services"
@@ -314,6 +311,10 @@ export default function FruitOfLabourPage() {
       </section>
 
       <FaqSection styles={styles} />
+      <section className={styles.formSection} aria-label="Request plumbing service">
+        <ContactForm styles={styles} />
+      </section>
+
 
       <section className={styles.finalCta} aria-labelledby="final-cta-title">
         <div className={styles.finalCtaInner}>
