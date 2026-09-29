@@ -48,7 +48,7 @@ export default function HomePage() {
         <div className="showcase-grid">
 
           
-          {landingPages.map(({ meta }, index) => {
+          {[...landingPages].reverse().map(({ meta }, index) => {
            
             const pageUrl = `/p/${meta.author.github}/${meta.slug}`;
 
