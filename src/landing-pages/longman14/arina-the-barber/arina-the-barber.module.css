@@ -1,0 +1,52 @@
+.page {
+  min-height: 100vh;
+  overflow-x: clip;
+}
+
+:global(html):has(.page) {
+  scroll-behavior: smooth;
+}
+
+.serviceMarquee {
+  animation: barber-marquee 40s linear infinite;
+}
+
+.reviewsMarquee {
+  animation: barber-marquee 60s linear infinite;
+}
+
+.poleStripe {
+  animation: barber-pole 2s linear infinite;
+}
+
+@keyframes barber-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes barber-pole {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 68px 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :global(html):has(.page) {
+    scroll-behavior: auto;
+  }
+
+  .page .serviceMarquee,
+  .page .reviewsMarquee,
+  .page .poleStripe {
+    animation: none !important;
+  }
+}

@@ -29,6 +29,9 @@ import RpPlumbingAtlantaLanding from "src/landing-pages/longman14/rp-plumbing-at
 import {meta as proXpressMeta} from "src/landing-pages/longman14/proxpress/meta"
 import {meta as homeForgerMeta} from "src/landing-pages/longman14/home-forger/meta"
 import FruitOfLabourPage from "src/landing-pages/longman14/fruit-of-labour/page";
+import AABuckleyPage, { meta as aaBuckleyMeta } from "src/landing-pages/longman14/aa-buckley/page";
+import OnlineRoofingPage, { meta as onlineRoofingMeta } from "src/landing-pages/longman14/online-roofing-ca/page";
+import ArinaTheBarberPage, { meta as arinaTheBarberMeta } from "src/landing-pages/longman14/arina-the-barber/page";
 
 
 
@@ -100,6 +103,18 @@ export const landingPages: LandingPageDef[] = [
   {
     meta: fruitOfLabourMeta,
     Component: FruitOfLabourPage
+  },
+  {
+    meta: aaBuckleyMeta,
+    Component: AABuckleyPage
+  },
+  {
+    meta: onlineRoofingMeta,
+    Component: OnlineRoofingPage
+  },
+  {
+    meta: arinaTheBarberMeta,
+    Component: ArinaTheBarberPage
   }
 
 ];
