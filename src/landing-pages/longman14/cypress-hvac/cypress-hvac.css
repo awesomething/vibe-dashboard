@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=DM+Sans:wght@400;500;600;700;800&display=swap");
+@import "tailwindcss/utilities";
+@source "./";
+
+@theme inline {
+  --color-ink: var(--cypress-color-ink);
+  --color-navy: var(--cypress-color-navy);
+  --color-navy-800: var(--cypress-color-navy-800);
+  --color-brand: var(--cypress-color-brand);
+  --color-brand-600: var(--cypress-color-brand-600);
+  --color-ice: var(--cypress-color-ice);
+  --color-heat: var(--cypress-color-heat);
+  --font-display: var(--cypress-font-display);
+  --font-sans: var(--cypress-font-sans);
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+
+  --animate-marquee: marquee 38s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-ring: pulse-ring 2.2s ease-out infinite;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  @keyframes pulse-ring {
+    0% { box-shadow: 0 0 0 0 rgb(22 119 255 / 0.5); }
+    100% { box-shadow: 0 0 0 16px rgb(22 119 255 / 0); }
+  }
+}
+
+html:has(.cypress-hvac-page) {
+  scroll-padding-top: 5.5rem;
+}
+
+.cypress-hvac-page {
+  --cypress-color-ink: #0b1f38;
+  --cypress-color-navy: #0f2a4a;
+  --cypress-color-navy-800: #14355c;
+  --cypress-color-brand: #1677ff;
+  --cypress-color-brand-600: #0f63dd;
+  --cypress-color-ice: #eef4fb;
+  --cypress-color-heat: #ff7a2f;
+  --cypress-font-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --cypress-font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+
+  background: #fff;
+  color: var(--cypress-color-ink);
+  font-family: var(--cypress-font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.cypress-hvac-page h1,
+.cypress-hvac-page h2,
+.cypress-hvac-page h3,
+.cypress-hvac-page .font-display {
+  font-family: var(--cypress-font-display);
+  letter-spacing: -0.02em;
+}
+
+.cypress-hvac-page .reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition:
+    opacity 0.7s cubic-bezier(0.2, 0.7, 0.2, 1),
+    transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+  transition-delay: var(--d, 0ms);
+}
+
+.cypress-hvac-page .reveal.in {
+  opacity: 1;
+  transform: none;
+}
+
+.cypress-hvac-page .grid-bg {
+  background-image:
+    linear-gradient(to right, rgb(15 42 74 / 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(15 42 74 / 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse at 30% 20%, black 20%, transparent 70%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:has(.cypress-hvac-page) {
+    scroll-behavior: auto;
+  }
+
+  .cypress-hvac-page .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .cypress-hvac-page *,
+  .cypress-hvac-page *::before,
+  .cypress-hvac-page *::after {
+    animation: none !important;
+  }
+}

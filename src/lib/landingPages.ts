@@ -32,7 +32,9 @@ import FruitOfLabourPage from "src/landing-pages/longman14/fruit-of-labour/page"
 import AABuckleyPage, { meta as aaBuckleyMeta } from "src/landing-pages/longman14/aa-buckley/page";
 import OnlineRoofingPage, { meta as onlineRoofingMeta } from "src/landing-pages/longman14/online-roofing-ca/page";
 import ArinaTheBarberPage, { meta as arinaTheBarberMeta } from "src/landing-pages/longman14/arina-the-barber/page";
-
+import HacacPage from "src/landing-pages/longman14/hacac/page";
+import { meta as hacacMeta } from "src/landing-pages/longman14/hacac/meta";
+import CypressHavcPage, { meta as cypressHvacMeta } from "src/landing-pages/longman14/cypress-hvac/page";
 
 
 export type LandingPageMeta = {
@@ -70,6 +72,7 @@ export const landingPages: LandingPageDef[] = [
   },
   {
     meta: frazierMeta,
+ 
     Component: FrazierPlumbingPage
   },
   {
@@ -115,6 +118,14 @@ export const landingPages: LandingPageDef[] = [
   {
     meta: arinaTheBarberMeta,
     Component: ArinaTheBarberPage
+  }, 
+  {
+    meta: hacacMeta,
+    Component: HacacPage
+  },
+  {
+    meta: cypressHvacMeta,
+    Component: CypressHavcPage
   }
 
 ];
