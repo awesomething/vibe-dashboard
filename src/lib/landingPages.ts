@@ -35,6 +35,11 @@ import ArinaTheBarberPage, { meta as arinaTheBarberMeta } from "src/landing-page
 import HacacPage from "src/landing-pages/longman14/hacac/page";
 import { meta as hacacMeta } from "src/landing-pages/longman14/hacac/meta";
 import CypressHavcPage, { meta as cypressHvacMeta } from "src/landing-pages/longman14/cypress-hvac/page";
+import OffTheHookPage from "src/landing-pages/longman14/off-the-hook/page";
+import { meta as offTheHookMeta } from "src/landing-pages/longman14/off-the-hook/meta";
+import ImmaculateFadezPage from "src/landing-pages/longman14/immaculate-fadez/page";
+import { meta as immaculateFadezMeta } from "src/landing-pages/longman14/immaculate-fadez/meta";
+import ChosenOneSalonPage, { meta as chosenOneSalonMeta } from "src/landing-pages/longman14/chosen-one-salon/page";
 
 
 export type LandingPageMeta = {
@@ -126,7 +131,19 @@ export const landingPages: LandingPageDef[] = [
   {
     meta: cypressHvacMeta,
     Component: CypressHavcPage
-  }
+  },
+  {
+    meta: offTheHookMeta,
+    Component: OffTheHookPage,
+  },
+  {
+    meta: immaculateFadezMeta,
+    Component: ImmaculateFadezPage,
+  },
+  {
+    meta: chosenOneSalonMeta,
+    Component: ChosenOneSalonPage,
+  },
 
 ];
 
