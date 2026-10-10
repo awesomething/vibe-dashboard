@@ -29,7 +29,17 @@ import RpPlumbingAtlantaLanding from "src/landing-pages/longman14/rp-plumbing-at
 import {meta as proXpressMeta} from "src/landing-pages/longman14/proxpress/meta"
 import {meta as homeForgerMeta} from "src/landing-pages/longman14/home-forger/meta"
 import FruitOfLabourPage from "src/landing-pages/longman14/fruit-of-labour/page";
-
+import AABuckleyPage, { meta as aaBuckleyMeta } from "src/landing-pages/longman14/aa-buckley/page";
+import OnlineRoofingPage, { meta as onlineRoofingMeta } from "src/landing-pages/longman14/online-roofing-ca/page";
+import ArinaTheBarberPage, { meta as arinaTheBarberMeta } from "src/landing-pages/longman14/arina-the-barber/page";
+import HacacPage from "src/landing-pages/longman14/hacac/page";
+import { meta as hacacMeta } from "src/landing-pages/longman14/hacac/meta";
+import CypressHavcPage, { meta as cypressHvacMeta } from "src/landing-pages/longman14/cypress-hvac/page";
+import OffTheHookPage from "src/landing-pages/longman14/off-the-hook/page";
+import { meta as offTheHookMeta } from "src/landing-pages/longman14/off-the-hook/meta";
+import ImmaculateFadezPage from "src/landing-pages/longman14/immaculate-fadez/page";
+import { meta as immaculateFadezMeta } from "src/landing-pages/longman14/immaculate-fadez/meta";
+import ChosenOneSalonPage, { meta as chosenOneSalonMeta } from "src/landing-pages/longman14/chosen-one-salon/page";
 
 
 export type LandingPageMeta = {
@@ -67,6 +77,7 @@ export const landingPages: LandingPageDef[] = [
   },
   {
     meta: frazierMeta,
+ 
     Component: FrazierPlumbingPage
   },
   {
@@ -100,7 +111,39 @@ export const landingPages: LandingPageDef[] = [
   {
     meta: fruitOfLabourMeta,
     Component: FruitOfLabourPage
-  }
+  },
+  {
+    meta: aaBuckleyMeta,
+    Component: AABuckleyPage
+  },
+  {
+    meta: onlineRoofingMeta,
+    Component: OnlineRoofingPage
+  },
+  {
+    meta: arinaTheBarberMeta,
+    Component: ArinaTheBarberPage
+  }, 
+  {
+    meta: hacacMeta,
+    Component: HacacPage
+  },
+  {
+    meta: cypressHvacMeta,
+    Component: CypressHavcPage
+  },
+  {
+    meta: offTheHookMeta,
+    Component: OffTheHookPage,
+  },
+  {
+    meta: immaculateFadezMeta,
+    Component: ImmaculateFadezPage,
+  },
+  {
+    meta: chosenOneSalonMeta,
+    Component: ChosenOneSalonPage,
+  },
 
 ];
 
