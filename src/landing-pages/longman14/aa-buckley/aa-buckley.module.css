@@ -1,0 +1,12 @@
+.page {
+  min-height: 100vh;
+  overflow-x: clip;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page :global(*) {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
