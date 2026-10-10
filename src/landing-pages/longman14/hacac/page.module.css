@@ -1,0 +1,30 @@
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeUp {
+  animation: fadeUp 0.7s ease-out;
+}
+
+.fadeUpQuick {
+  animation: fadeUp 0.5s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :global(html):has(.fadeUp) {
+    scroll-behavior: auto;
+  }
+
+  .fadeUp,
+  .fadeUpQuick {
+    animation: none;
+  }
+}

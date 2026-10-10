@@ -22,11 +22,11 @@ export function Navbar() {
   }, []);
 
   const link =
-    "text-[13px] uppercase tracking-[0.2em] text-[#f5efe6]/80 transition hover:text-[#c9a24b]";
+    "text-[13px] uppercase tracking-[0.2em] text-white/80! transition hover:text-[#c9a24b]";
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
+      className={`fixed p-2 lg:p-4 inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled ? "bg-stone-950/95 shadow-xl backdrop-blur-md" : "bg-transparent"
       }`}
     >
@@ -42,14 +42,14 @@ export function Navbar() {
           aria-label="Toggle menu"
           aria-expanded={open}
           onClick={() => setOpen((value) => !value)}
-          className="flex h-10 w-10 items-center text-[#f5efe6] lg:hidden"
+          className="flex h-10 w-10 items-center text-white! lg:hidden"
         >
           {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
 
         <a
           href="#top"
-          className="flex items-center justify-center gap-2.5 text-[#f5efe6]"
+          className="flex items-center justify-center gap-2.5 text-white!"
         >
           <Scissors className="h-5 w-5 text-[#c9a24b]" />
           <span className="font-serif text-xl tracking-wide md:text-2xl">
@@ -88,7 +88,7 @@ export function Navbar() {
               key={item.href}
               href={item.href}
               onClick={() => setOpen(false)}
-              className="block border-b border-white/10 py-3 text-[#f5efe6]"
+              className="block border-b border-white/10 py-3 text-[#f5efe6]!"
             >
               {item.label}
             </a>
